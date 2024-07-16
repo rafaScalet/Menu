@@ -8,6 +8,7 @@
     <title>Menu - Scalet</title>
     <link rel="icon" href="assets/logo.svg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quantity.css">
 </head>
 
 <body>
@@ -22,19 +23,34 @@
                     <img src="assets/bife.jpg" alt="bife">
                     <span>Bife com batata frita</span>
                     <span class="price">R$ 30,00</span>
-                    <div class="quantity buttons-added"></div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
                 <div class="product">
                     <img src="assets/coxa.jpg" alt="bife">
                     <span>Coxa de frango crocante</span>
                     <span class="price">R$ 25,00</span>
-                    <div class="quantity buttons-added"></div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
                 <div class="product">
                     <img src="assets/panela.jpg" alt="bife">
                     <span>Carne de panela</span>
                     <span class="price">R$ 22,00</span>
-                    <div class="quantity buttons-added"></div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,24 +62,41 @@
                     <img src="assets/farofa.jpg" alt="bife">
                     <span>Farofa</span>
                     <span class="price">R$ 10,00</span>
-                    <div class="quantity buttons-added"></div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
                 <div class="product">
                     <img src="assets/salada.jpg" alt="bife">
                     <span>Salada</span>
                     <span class="price">R$ 8,00</span>
-                    <div class="quantity buttons-added"></div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
                 <div class="product">
                     <img src="assets/torresmo.jpg" alt="bife">
                     <span>Torresmo</span>
                     <span class="price">R$ 12,00</span>
-                    <div class="quantity buttons-added"></div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"> </script>
+    <script src="js/quantity.js"> </script>
+    <script src="js/javascript.js"> </script>
 </body>
 
 </html>

@@ -13,19 +13,32 @@ const formatter = new Intl.NumberFormat('pt-BR', {
 });
 
 function calc () {
-    const personName = document.getElementById('name');
+    const personName = document.getElementById('name').value;
+    const quantities = document.getElementsByName('quantity');
     
-    var quantities = document.getElementsByName('quantity');
-    var output = document.getElementById('output');
+    let output = document.getElementById('output');
+    let result = 0;
+
+    output.innerHTML = `Caro <strong>${personName}</strong></br></br></br>`;
+    output.innerHTML += 'Seguem os dados do seu pedido</br></br>';
+    output.innerHTML += 'O seu pedido é: </br>';
+    output.innerHTML += `<ul>`;
 
     for (let input of quantities) {
         if (input.value == 0) {
             continue;
         }
-
+        
         let id = input.id;
         let total = prods[id - 1].price * input.value;
-
-        output.innerHTML += `Prato: ${prods[id - 1].name} - Preço unitário: ${formatter.format(prods[id - 1].price)} - Quantidade: ${input.value} - Total: ${formatter.format(total)}</br>`
+        
+        const msg = `Prato: ${prods[id - 1].name} - Preço unitário: ${formatter.format(prods[id - 1].price)} - Quantidade: ${input.value} - Total: ${formatter.format(total)}</br>`;
+        output.innerHTML += `<li>${msg}</li>`;
+        
+        result += total;
+        
     }
+
+    output.innerHTML += `</ul>`;
+    output.innerHTML += `</br><h4>Preço final: ${formatter.format(result)}</h4>`;
 }

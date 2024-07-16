@@ -10,6 +10,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .category {
@@ -21,8 +23,14 @@ body {
     padding: 5px;
     margin: auto;
     margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: 700;
+}
+
+.category input {
+    width: 700px;
+    border: none;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .products {
@@ -51,11 +59,3 @@ body {
     font-size: 24px;
     margin: 10px;
 }
-
-/* .product img {
-    width: 200px;
-} */
-/* 
-.home-image {
-    width: 600px;
-} */

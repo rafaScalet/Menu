@@ -31,23 +31,23 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="assets/coxa.jpg" alt="bife">
+                    <img src="assets/coxa.jpg" alt="frango">
                     <span>Coxa de frango crocante</span>
                     <span class="price">R$ 25,00</span>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                        <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
                 <div class="product">
-                    <img src="assets/panela.jpg" alt="bife">
+                    <img src="assets/panela.jpg" alt="carne de panela">
                     <span>Carne de panela</span>
                     <span class="price">R$ 22,00</span>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                        <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
@@ -59,34 +59,34 @@
             <span>Porções para uma pessoa</span>
             <div class="products">
                 <div class="product">
-                    <img src="assets/farofa.jpg" alt="bife">
+                    <img src="assets/farofa.jpg" alt="farofa">
                     <span>Farofa</span>
                     <span class="price">R$ 10,00</span>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                        <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
                 <div class="product">
-                    <img src="assets/salada.jpg" alt="bife">
+                    <img src="assets/salada.jpg" alt="salada">
                     <span>Salada</span>
                     <span class="price">R$ 8,00</span>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                        <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
                 </div>
                 <div class="product">
-                    <img src="assets/torresmo.jpg" alt="bife">
+                    <img src="assets/torresmo.jpg" alt="torresmo">
                     <span>Torresmo</span>
                     <span class="price">R$ 12,00</span>
                     <div class="quantity buttons_added">
                         <input type="button" value="-" class="minus">
-                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                        <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
@@ -95,18 +95,20 @@
         </div>
         <div class="category">
             <span class="title">Dados Pessoais</span>
-            <input type="text" id="nome" placeholder="Digite o seu nome">
-            <input type="tel" id="telefone" placeholder="Digite o seu telefone">
+            <input type="text" id="name" placeholder="Digite o seu nome">
+            <input type="tel" id="phone" placeholder="Digite o seu telefone">
             <input type="email" id="email" placeholder="Digite o seu email">
         </div>
+        <button onclick="calc()">Calcular</button>
+        <div id="output"></div>
     </div>
     <script src="js/jquery-3.6.0.min.js"> </script>
     <script src="js/quantity.js"> </script>
-    <script src="js/javascript.js"> </script>
     <script src="js/jquery.mask.min.js"> </script>
+    <script src="js/script.js"> </script>
 
     <script>
-        $("#telefone").mask("(99) 99999-9999");
+        $("#phone").mask("(99) 99999-9999");
     </script>
 </body>
 
